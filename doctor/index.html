@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>doctor</title>
+
+    <!-- Slick Slider CSS CDN -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- Hero Section Slider -->
+    <div class="hero_section">
+        <div class="hero-slider ">
+            <div class=" slide " style="background-image: url(img/S1A_1500.0.png);">
+                <div class="wrapper">
+                    <div class="content_area">
+                        <h1>Farm<br>
+                            Managememt</h1>
+                        <p>Create an app powered by . ehashi technology,<br>
+                            To provide value and collect aiuable data.</p>
+                        <a href="#" class="button">More</a>
+                    </div>
+                    <div class="right_img">
+                        <img src="./img/mobile.png" alt="Image">
+                    </div>
+                </div>
+            </div>
+            <div class=" slide " style="background-image: url(img/S2A.png);">
+                <div class="wrapper">
+                    <div class="content_area">
+                        <h1>Transforming<br>
+                            Agriculture</h1>
+                        <p>Create an app powered by . ehashi technology,<br>
+                            To provide value and collect aiuable data.</p>
+                        <a href="#" class="button">More</a>
+                    </div>
+                    <div class="right_img">
+                        <img src="./img/S2B-1.png" alt="Image">
+                    </div>
+                </div>
+            </div>
+            <div class=" slide " style="background-image: url(img/S3A.png);">
+                <div class="wrapper">
+                    <div class="content_area">
+                        <h1>Transforming<br>
+                            Agriculture</h1>
+                        <p>Create an app powered by . ehashi technology,<br>
+                            To provide value and collect aiuable data.</p>
+                        <a href="#" class="button">More</a>
+                    </div>
+                    <div class="right_img">
+                        <img src="./img/mobile.png" alt="Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery & Slick Slider JS CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.hero-slider').slick({
+                dots: true,           // Show pagination dots
+                arrows: false,        // Hide next/prev arrows
+                autoplay: true,       // Auto-slide
+                autoplaySpeed: 3000,  // Slide duration (3s)
+                fade: true,           // Fade effect
+                cssEase: 'linear'     // Smooth transition
+            });
+        });
+    </script>
+</body>
+
+</html>
